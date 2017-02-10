@@ -9,20 +9,20 @@ It is time intensive producing accurate valid specifications and copy. This tool
 it does allow you to reuse your product copy with templates which eases the burden considerably.
 
 ## Setup
-- make sure you have python 2.* (this is only tested on python 2.7)
+- make sure you have python 2.7
 - clone into this repository
 - cd into this directory
-    - requires python 2.7, just stdlib
+- verify: `python description_gen.py example`
 
 
 # Workflows
 
 ### Setting up your products
 
-Before you can start generating product copy and specifications you'll need to build a format for
+Before you can start generating product copy and specifications you'll need to build a format [template] for
 your specifications, write some description templates and then assign them to product types:
 
-1. edit products.py
+1. edit lib/products.py
 2. Setup your sample specifications
 3. Setup your specification templates
 3. Write product description templates
@@ -32,11 +32,11 @@ You can copy the samples {animal, puzzle} in products.py for reference.
 
 ### Generating specs and copy
 
-1) observe and analyze a product you with to generate for
-2) generate specifications in the correct format
-3) upload specifications to description_gen.py (copy paste or use the editor, whichever you prefer)
-4) pick your favorite copy
-5) paste the result into your products description in your catalog
+1. observe and analyze a product you wish to generate specs and copy for
+2. generate specifications in the correct format
+3. upload specifications to description_gen.py (copy paste or use the editor, whichever you prefer)
+4. pick your favorite copy
+5. paste the result into your products description in your catalog
 
 #### description_gen.py
 Use this script to do two things
@@ -45,7 +45,7 @@ Use this script to do two things
 2. generate descriptions
 
 #### sample workflow with --editor
-export EDITOR=<your favorite editor>  # if you don't know what your favorite editor is, use nano or pico
+`export EDITOR=/usr/bin/nano`  # if you don't know what your favorite editor is, use nano or pico
 1. `python specifications_gen.py animal`
 2. "y" to begin editing
 3. edit the specifications as per the template
@@ -66,3 +66,7 @@ export EDITOR=<your favorite editor>  # if you don't know what your favorite edi
 9. select the description from the list of generated descriptions
 10. say "yes" to send it to the clipboard
 11. paste it into your catalog
+
+
+# Caveats
+This software is provided as-is and has some bugs. All the documentation is in the readme and products.py. 
